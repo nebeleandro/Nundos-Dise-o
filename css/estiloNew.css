@@ -1,3 +1,6 @@
+* {
+  margin: 0px; }
+
 header {
   align-items: flex-start;
   justify-content: space-between;
@@ -222,6 +225,116 @@ main {
 .info__presentacion {
   transform: translate(0px, -170px);
   color: white; }
+
+.mainProyectos .categorias {
+  display: grid;
+  height: 100vh;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  /* grid-column-gap: 10px;
+        grid-row-gap: 10px;*/
+  justify-content: space-between;
+  align-content: space-between;
+  grid-template-areas: "titulo titulo titulo titulo titulo" "producto producto espacio espacio personaje" "producto producto grafica animacion modelado"; }
+
+.mainProyectos .titProyecto {
+  grid-area: titulo; }
+
+.mainProyectos .diProducto {
+  max-height: 100%;
+  max-width: 100%;
+  grid-area: producto; }
+
+.mainProyectos .diEspacio {
+  max-height: 100%;
+  max-width: 100%;
+  grid-area: espacio; }
+
+.mainProyectos .modelados {
+  max-height: 100%;
+  max-width: 100%;
+  grid-area: modelado; }
+
+.mainProyectos .graficas {
+  max-height: 100%;
+  max-width: 100%;
+  grid-area: grafica; }
+
+.mainProyectos .personajes {
+  max-height: 100%;
+  max-width: 100%;
+  grid-area: personaje; }
+
+.mainProyectos .animaciones {
+  grid-area: animacion;
+  max-height: 100%;
+  max-width: 100%; }
+
+.mainProyectos .imgGrilla {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover; }
+
+.mainProyectos .diProducto {
+  position: relative;
+  text-align: center;
+  color: grey; }
+
+.mainProyectos .diProducto p {
+  position: absolute;
+  bottom: 8px;
+  left: 16px; }
+
+.mainProyectos .diEspacio {
+  position: relative;
+  text-align: center;
+  color: grey; }
+
+.mainProyectos .diEspacio p {
+  position: absolute;
+  bottom: 8px;
+  left: 16px; }
+
+.mainProyectos .modelados {
+  position: relative;
+  text-align: center;
+  color: grey; }
+
+.mainProyectos .modelados p {
+  position: absolute;
+  bottom: 8px;
+  left: 16px; }
+
+.mainProyectos .graficas {
+  position: relative;
+  text-align: center;
+  color: grey; }
+
+.mainProyectos .graficas p {
+  position: absolute;
+  bottom: 8px;
+  left: 16px; }
+
+.mainProyectos .personajes {
+  position: relative;
+  text-align: center;
+  color: grey; }
+
+.mainProyectos .personajes p {
+  position: absolute;
+  bottom: 8px;
+  left: 16px; }
+
+.mainProyectos .animaciones {
+  position: relative;
+  text-align: center;
+  color: grey; }
+
+.mainProyectos .animaciones p {
+  position: absolute;
+  bottom: 8px;
+  left: 16px; }
 
 footer {
   display: flex;

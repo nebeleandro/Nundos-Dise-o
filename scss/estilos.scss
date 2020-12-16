@@ -1,5 +1,5 @@
 
-
+*{margin: 0px;}
 
 header {
 
@@ -326,6 +326,161 @@ main {
     
 }
 
+.mainProyectos {
+    .categorias {
+
+        display: grid;
+        
+    
+        height: 100vh;
+    
+        grid-template-columns: repeat(5, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+       /* grid-column-gap: 10px;
+        grid-row-gap: 10px;*/
+        justify-content: space-between;
+    
+        align-content: space-between;
+        grid-template-areas:    		
+                "titulo titulo titulo titulo titulo"
+                "producto producto espacio espacio personaje"
+                "producto producto grafica animacion modelado";
+    
+    }
+    
+    .titProyecto {
+        grid-area: titulo;
+    }
+    
+    
+     .diProducto {
+        max-height: 100%;
+        max-width: 100%;
+        grid-area: producto;
+    
+        
+    }
+    
+    
+    
+     .diEspacio {
+        max-height: 100%;
+        max-width: 100%;
+        grid-area: espacio;
+    
+        
+    }
+    
+    
+    
+     .modelados {
+        max-height: 100%;
+        max-width: 100%;
+        grid-area: modelado;
+    
+        
+    }
+    
+    
+    
+     .graficas { 
+        
+        max-height: 100%;
+        max-width: 100%;
+        grid-area: grafica;
+    
+    }
+    
+    
+    
+     .personajes {
+        max-height: 100%;
+        max-width: 100%;
+        grid-area: personaje;
+    
+        
+    }
+    
+     .animaciones {
+        grid-area: animacion;
+        max-height: 100%;
+        max-width: 100%;
+    }
+    
+    .imgGrilla {
+        width: 100%;
+        height: 100%;
+        display: block;
+        object-fit: cover;
+    
+    }
+    .diProducto {
+      position: relative;
+      text-align: center;
+      color: grey;}
+    .diProducto p {
+    
+      position: absolute;
+      bottom: 8px;
+      left: 16px;
+     }
+    .diEspacio {
+      position: relative;
+      text-align: center;
+      color: grey;
+    }
+    .diEspacio p {
+    
+      position: absolute;
+      bottom: 8px;
+      left: 16px;
+    }
+    .modelados {
+      position: relative;
+      text-align: center;
+      color: grey;}
+    .modelados p {
+    
+      position: absolute;
+      bottom: 8px;
+      left: 16px;
+    }
+    .graficas {
+      position: relative;
+      text-align: center;
+      color: grey;
+    }
+
+    .graficas p {
+    
+      position: absolute;
+      bottom: 8px;
+      left: 16px;
+    }
+    .personajes {
+      position: relative;
+      text-align: center;
+      color: grey;}
+    
+    .personajes p {
+    
+      position: absolute;
+      bottom: 8px;
+      left: 16px;
+    }
+    .animaciones {
+      position: relative;
+      text-align: center;
+      color: grey;
+    }
+    
+    .animaciones p {
+    
+      position: absolute;
+      bottom: 8px;
+      left: 16px;
+    }
+}
 
     footer {
         display:flex;
