@@ -20,7 +20,7 @@ header {
     justify-content: space-between;
     
     position: fixed;
-    width: 100%;
+    width: 100vw;
     height: 10%;
     z-index: 9999;
     background-color: #d8d8d8;
@@ -270,9 +270,13 @@ main {
             font-family: 'Roboto Condensed', sans-serif;
             font-weight: 300;
             font-style: normal;
-            width: 800px;
+            width: 70%;
             height: 600px;
             border: solid 5px #D8D8D8;
+
+            textarea {
+                width: 95%;
+            }
         }
     }
 }
