@@ -8,7 +8,7 @@
 	<meta name="keywords" content="DISEÑO, DISEÑO INDUSTRIAL, DISEÑO GRAFICO, DISEÑO DIGITAL, RENDER, ANIMACION, MODELADO TECNICO, DISEÑO ESPACIO">
 	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap" rel="stylesheet">
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
 	<link rel="stylesheet" href="css/estilo.css" />
 	<link rel="stylesheet" href="css/estiloNew.css" />
 
@@ -16,7 +16,7 @@
 	
 	<body id="bodyIndex">		
 	
-			<header  class="header" >
+			<header  class="header shadow-lg p-3 mb-5 rounded" >
 				<img class="header__isotipo" src="imagenes/logo.png" width="300" height="150"
 				alt="logo del estudio de diseño"
 				/>
@@ -27,7 +27,7 @@
 				  </button>
 				  <div class="header__nav collapse navbar-collapse" id="navbarNavAltMarkup" >
 				    <div class="header__nav_link navbar-nav">
-				      <a class="header__nav__link__a nav-item nav-link active" href="index.html">Inicio <span class="sr-only">(current)</span></a>
+				      <a class="header__nav__link__a nav-item nav-link active" href="index.html">Inicio </a>
 				      <a class="header__nav__link__a nav-item nav-link active" href="pages/quienesSomos.html">Quienes Somos</a>
 				      <a class="header__nav__link__a nav-item nav-link active" href="pages/servicios.html">Servicios</a>
 				      <a class="header__nav__link__a nav-item nav-link active" href="pages/proyectos.html">Proyectos</a>
@@ -41,15 +41,16 @@
 			<main class="contenido">
 				<section class="contenido__portada portada">
 					<p class="slogan__index"><em>Diseño total en un solo lugar.</em></p>
+					<!--<div style="background-image: url('imagenes/portada.jpg');"></div>
 					<img  class="header__portada portada"  width="100%" height="60%" 
 					src="imagenes/portada.jpg" 
 					alt="Foto de un dormitorio renderizado"
-					/>
+					/>-->
 				</section>
 
 				<section class="contenido__servicios">
 					<h1 class="contenido__servicios__titulo">Servicios</h1>
-						<ul class="contenio__servicios__lista">
+						<!--<ul class="contenio__servicios__lista">
 							<li>Diseño de producto</li>
 							<li>Diseño de espacio</li>
 							<li>Modelado de producto</li>
@@ -58,15 +59,43 @@
 							<li>Diseño de contenido multimedial</li>
 							<li>Gráfica de producto</li>
 							<li>Modelado de personaje</li>
-						</ul>
+						</ul>-->
+						
+							<div class="alert alert-dark container" role="alert">
+								Diseño de producto <a href="#" class="alert-link">an example link</a>.
+							</div>
+							<div class="alert alert-dark container" role="alert">
+								Diseño de espacio <a href="#" class="alert-link">an example link</a>.
+							</div>
+							<div class="alert alert-dark container" role="alert">
+								Modelado de producto <a href="#" class="alert-link">an example link</a>.
+							</div>
+							<div class="alert alert-dark container" role="alert">
+								Renderizado de producto <a href="#" class="alert-link">an example link</a>.
+							</div>
+							<div class="alert alert-dark container" role="alert">
+								Modelado y renderizado de espacio <a href="#" class="alert-link">an example link</a>.
+							</div>
+							<div class="alert alert-dark container" role="alert">
+								Diseño de contenido multimedial <a href="#" class="alert-link">an example link</a>. 
+							</div>
+							<div class="alert alert-dark container" role="alert">
+								Gráfica de producto <a href="#" class="alert-link">an example link</a>. 
+							</div>
+							<div class="alert alert-dark container" role="alert">
+								Modelado de personaje <a href="#" class="alert-link">an example link</a>. 
+							</div>
+					
 				</section>
 
 				<section class="contenido__proyectos">
+
+					
 					<div class="container_fluid">
 
 						<h2 class="contenido__proyectos__titulo"><em><strong>Proyectos</strong></em></h2>
 
-						<article class="contenido__proyectos__sliderFotos container_fluid">
+					<!--	<article class="contenido__proyectos__sliderFotos container_fluid">
 
 							<img class="contenido__proyectos__sliderFotos__img" src="imagenes/mamba.jpg" width="250" height="250"
 								 alt="imagen de proyecto de botella coleccionable para el museo de arte moderno de Buenos Aires" />
@@ -77,7 +106,36 @@
 							<img class="contenido__proyectos__sliderFotos__img" src="imagenes/triciclo.jpg" width="400" height="250"
 								 alt="Imagen de un panel de presntacion del diseño de un triciclo y su forma de uso" />
 
-						</article>
+						</article>-->
+						<section class="slider">
+						<div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+							<div class="slider__imagenes">	
+								<div class="carousel-inner">
+								
+								<div class="carousel-item active">
+									<img src="imagenes/mamba.jpg" class="d-block w-50" alt="imagen de proyecto de botella coleccionable para el museo de arte moderno de Buenos Aires">
+								</div>
+								<div class="carousel-item">
+									<img src="imagenes/LINTERNAEJERCITO.jpg" class="d-block w-50" alt="Imagen con muchas linternas clasica de la marca Eveready">
+								</div>
+								<div class="carousel-item">
+									<img src="imagenes/afa.jpg" class="d-block w-50" alt="Imagen de botella deportiva para la seleccion argentina de futbol">
+								</div>
+								<div class="carousel-item">
+									<img src="imagenes/triciclo.jpg" class="d-block w-50" alt="IImagen de un panel de presntacion del diseño de un triciclo y su forma de uso">
+								</div>
+								</div>
+							</div>
+								<a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-bs-slide="prev">
+								<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+								<span class="visually-hidden">Previous</span>
+								</a>
+								<a class="carousel-control-next" href="#carouselExampleControls" role="button" data-bs-slide="next">
+								<span class="carousel-control-next-icon" aria-hidden="true"></span>
+								<span class="visually-hidden">Next</span>
+								</a>
+							</div>
+						</section>
 					</div>
 
 				</section>
@@ -150,7 +208,7 @@
 				<p class="derechosAutor">Derechos de autor y legales</p>
 			</footer>
 
-	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>		
-	</body>
+			<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js" integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous"></script>
+			<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous"></script>	
+		</body>
 </html>
