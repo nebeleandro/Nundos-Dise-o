@@ -329,11 +329,11 @@ main {
 
     #gridContacto{
         #formContact{
-            @include sizes(700px, 520px);
+            @include sizes(80%, 100%);
 
         }
         #map{
-            @include sizes(700px, 520px);
+            @include sizes(80%, 80%);
         }
     }
  
@@ -352,7 +352,8 @@ main {
 	grid-template-areas: 
 	"titulo titulo"
 	"form map";
-	background-color: white;
+    background-color: white;
+   padding: 2%;
 	}
 #contactoTitulo{
 	grid-area: titulo;
@@ -361,6 +362,7 @@ main {
 #map{
     grid-area: map;
     padding: 10px;
+    width: 40%;
     margin: 5%;
 }
 #formContact{
@@ -373,9 +375,14 @@ main {
  	font-family: 'Roboto Condensed', sans-serif;
  	font-weight: 300;
  	font-style: normal;
- 	margin: 5%;
+ 	margin: 2%;
 	 border: solid 5px #D8D8D8;
-	 padding: 1%;
+     padding: 1%;
+     width: 40%;
+     
+     textarea {
+        width: 95%;
+    }
  }
 
     
