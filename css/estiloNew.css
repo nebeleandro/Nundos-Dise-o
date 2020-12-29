@@ -15,20 +15,22 @@ header {
   justify-content: space-between;
   position: fixed;
   width: 100vw;
-  height: 10%;
+  height: 10vh;
   z-index: 9999;
   background-color: #d8d8d8;
   position: fixed;
   display: inline-flex;
-  /*    &__nav {
-           
-            margin-right: 3%;
-            margin-top: 1%;
-        }*/ }
+  /*
+
+        .navbar-collapse{
+            transform: translate(0%, -50%);
+        }
+*/ }
   header .header__isotipo {
-    transform: translate(35px, -14px); }
-  header .navbar-collapse {
-    transform: translate(-10%, 0%); }
+    transform: translate(0%, -25%);
+    width: 35vh; }
+  header .header__nav {
+    transform: translate(-5%, 40%); }
   header a {
     text-decoration: none;
     color: #424241;
@@ -38,14 +40,15 @@ header {
     font-size: 15px;
     text-align: center;
     vertical-align: middle;
-    animation-duration: 500ms; }
+    animation-duration: 500ms;
+    transform: translate(0%, -25%); }
   header a:hover {
     background-color: white;
     color: #D8D8D8; }
   header__navbar {
     margin-top: 50%; }
   header .navbar-toggler {
-    transform: translate(-40%, 60%); }
+    transform: translate(-40%, 15%); }
 
 main {
   background: #424241; }
@@ -321,152 +324,157 @@ main {
     color: white;
    */ }
 
-@media only screen and (min-width: 1200px) {
-  .mainProyectos .categorias {
-    display: grid;
-    height: 100vh;
-    grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: repeat(3, 1fr);
-    /* grid-column-gap: 10px;
+#bodyProyecto {
+  /*
+    .header{ 
+        .header__isotipo {
+        transform: translate(5%, -20%);
+        height: 200%;
+        width: 20%;
+    }
+
+    
+
+
+    .navbar-collapse{ 
+        transform: translate(-10%, 0%);
+    }
+
+    a {
+        text-decoration: none;
+        color: #424241;
+        border-radius: 5px;
+        background-color: #D8D8D8;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 15px;
+        text-align: center;
+        vertical-align: middle;
+        animation-duration: 500ms;
+        transform: translate(-15%, 30%);
+        }
+        
+    }*/ }
+  @media only screen and (min-width: 1200px) {
+    #bodyProyecto .mainProyectos .categorias {
+      display: grid;
+      height: 100vh;
+      grid-template-columns: repeat(5, 1fr);
+      grid-template-rows: repeat(3, 1fr);
+      /* grid-column-gap: 10px;
         grid-row-gap: 10px;*/
-    justify-content: space-between;
-    align-content: space-between;
-    grid-template-areas: "titulo titulo titulo titulo titulo" "producto producto espacio espacio personaje" "producto producto grafica animacion modelado"; } }
-
-@media only screen and (max-width: 1200px) {
-  .mainProyectos .categorias {
-    display: grid;
-    height: 70vh;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(5, 1fr);
-    /* grid-column-gap: 10px;
+      justify-content: space-between;
+      align-content: space-between;
+      grid-template-areas: "titulo titulo titulo titulo titulo" "producto producto espacio espacio personaje" "producto producto grafica animacion modelado"; } }
+  @media only screen and (max-width: 1200px) {
+    #bodyProyecto .mainProyectos .categorias {
+      display: grid;
+      height: 70vh;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(5, 1fr);
+      /* grid-column-gap: 10px;
         grid-row-gap: 10px;*/
-    justify-content: space-between;
-    align-content: space-between;
-    grid-template-areas: "titulo titulo" "producto espacio" "grafica personaje" "modelado animacion" "profoot profoot"; } }
-
-@media only screen and (max-width: 600px) {
-  .mainProyectos .categorias {
-    display: grid;
-    height: 70vh;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(7, 1fr);
-    /* grid-column-gap: 10px;
+      justify-content: space-between;
+      align-content: space-between;
+      grid-template-areas: "titulo titulo" "producto espacio" "grafica personaje" "modelado animacion" "profoot profoot"; } }
+  @media only screen and (max-width: 600px) {
+    #bodyProyecto .mainProyectos .categorias {
+      display: grid;
+      height: 70vh;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(7, 1fr);
+      /* grid-column-gap: 10px;
         grid-row-gap: 10px;*/
-    justify-content: space-between;
-    align-content: space-between;
-    grid-template-areas: "titulo titulo" "producto producto" "espacio espacio" "modelado modelado" "personaje personaje" "grafica grafica" "animacion animacion"; } }
-
-.mainProyectos .titProyecto {
-  grid-area: titulo; }
-
-.mainProyectos .footer__proyectos {
-  max-height: 100%;
-  max-width: 100%;
-  grid-area: profoot; }
-
-.mainProyectos .diProducto {
-  max-height: 100%;
-  max-width: 100%;
-  grid-area: producto; }
-
-.mainProyectos .diEspacio {
-  max-height: 100%;
-  max-width: 100%;
-  grid-area: espacio; }
-
-.mainProyectos .modelados {
-  max-height: 100%;
-  max-width: 100%;
-  grid-area: modelado; }
-
-.mainProyectos .graficas {
-  max-height: 100%;
-  max-width: 100%;
-  grid-area: grafica; }
-
-.mainProyectos .personajes {
-  max-height: 100%;
-  max-width: 100%;
-  grid-area: personaje; }
-
-.mainProyectos .animaciones {
-  grid-area: animacion;
-  max-height: 100%;
-  max-width: 100%; }
-
-.mainProyectos .imgGrilla {
-  width: 100%;
-  height: 100%;
-  display: block;
-  object-fit: cover; }
-
-.mainProyectos .diProducto {
-  position: relative;
-  text-align: center;
-  color: grey; }
-
-.mainProyectos .diProducto p {
-  position: absolute;
-  bottom: 8px;
-  left: 16px; }
-
-.mainProyectos .diEspacio {
-  position: relative;
-  text-align: center;
-  color: grey; }
-
-.mainProyectos .diEspacio p {
-  position: absolute;
-  bottom: 8px;
-  left: 16px; }
-
-.mainProyectos .modelados {
-  position: relative;
-  text-align: center;
-  color: grey; }
-
-.mainProyectos .modelados p {
-  position: absolute;
-  bottom: 8px;
-  left: 16px; }
-
-.mainProyectos .graficas {
-  position: relative;
-  text-align: center;
-  color: grey; }
-
-.mainProyectos .graficas p {
-  position: absolute;
-  bottom: 8px;
-  left: 16px; }
-
-.mainProyectos .personajes {
-  position: relative;
-  text-align: center;
-  color: grey; }
-
-.mainProyectos .personajes p {
-  position: absolute;
-  bottom: 8px;
-  left: 16px; }
-
-.mainProyectos .animaciones {
-  position: relative;
-  text-align: center;
-  color: grey; }
-
-.mainProyectos .animaciones p {
-  position: absolute;
-  bottom: 8px;
-  left: 16px; }
-
-.mainProyectos .categorias article {
-  filter: saturate(5%);
-  font-size: 30px; }
-
-.mainProyectos .categorias article:hover {
-  filter: saturate(100%); }
+      justify-content: space-between;
+      align-content: space-between;
+      grid-template-areas: "titulo titulo" "producto producto" "espacio espacio" "modelado modelado" "personaje personaje" "grafica grafica" "animacion animacion"; } }
+  #bodyProyecto .mainProyectos .titProyecto {
+    grid-area: titulo; }
+  #bodyProyecto .mainProyectos .footer__proyectos {
+    max-height: 100%;
+    max-width: 100%;
+    grid-area: profoot; }
+  #bodyProyecto .mainProyectos .diProducto {
+    max-height: 100%;
+    max-width: 100%;
+    grid-area: producto; }
+  #bodyProyecto .mainProyectos .diEspacio {
+    max-height: 100%;
+    max-width: 100%;
+    grid-area: espacio; }
+  #bodyProyecto .mainProyectos .modelados {
+    max-height: 100%;
+    max-width: 100%;
+    grid-area: modelado; }
+  #bodyProyecto .mainProyectos .graficas {
+    max-height: 100%;
+    max-width: 100%;
+    grid-area: grafica; }
+  #bodyProyecto .mainProyectos .personajes {
+    max-height: 100%;
+    max-width: 100%;
+    grid-area: personaje; }
+  #bodyProyecto .mainProyectos .animaciones {
+    grid-area: animacion;
+    max-height: 100%;
+    max-width: 100%; }
+  #bodyProyecto .mainProyectos .imgGrilla {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover; }
+  #bodyProyecto .mainProyectos .diProducto {
+    position: relative;
+    text-align: center;
+    color: grey; }
+  #bodyProyecto .mainProyectos .diProducto p {
+    position: absolute;
+    bottom: 8px;
+    left: 16px; }
+  #bodyProyecto .mainProyectos .diEspacio {
+    position: relative;
+    text-align: center;
+    color: grey; }
+  #bodyProyecto .mainProyectos .diEspacio p {
+    position: absolute;
+    bottom: 8px;
+    left: 16px; }
+  #bodyProyecto .mainProyectos .modelados {
+    position: relative;
+    text-align: center;
+    color: grey; }
+  #bodyProyecto .mainProyectos .modelados p {
+    position: absolute;
+    bottom: 8px;
+    left: 16px; }
+  #bodyProyecto .mainProyectos .graficas {
+    position: relative;
+    text-align: center;
+    color: grey; }
+  #bodyProyecto .mainProyectos .graficas p {
+    position: absolute;
+    bottom: 8px;
+    left: 16px; }
+  #bodyProyecto .mainProyectos .personajes {
+    position: relative;
+    text-align: center;
+    color: grey; }
+  #bodyProyecto .mainProyectos .personajes p {
+    position: absolute;
+    bottom: 8px;
+    left: 16px; }
+  #bodyProyecto .mainProyectos .animaciones {
+    position: relative;
+    text-align: center;
+    color: grey; }
+  #bodyProyecto .mainProyectos .animaciones p {
+    position: absolute;
+    bottom: 8px;
+    left: 16px; }
+  #bodyProyecto .mainProyectos .categorias article {
+    filter: saturate(5%);
+    font-size: 30px; }
+  #bodyProyecto .mainProyectos .categorias article:hover {
+    filter: saturate(100%); }
 
 footer {
   display: flex;
