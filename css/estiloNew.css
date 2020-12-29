@@ -41,7 +41,7 @@ header {
     text-align: center;
     vertical-align: middle;
     animation-duration: 500ms;
-    transform: translate(0%, -25%); }
+    transform: translate(0%, 30%); }
   header a:hover {
     background-color: white;
     color: #D8D8D8; }
@@ -49,6 +49,12 @@ header {
     margin-top: 50%; }
   header .navbar-toggler {
     transform: translate(-40%, 15%); }
+  header .collapse {
+    transform: 0%, 0%; }
+  header #navbarNavAltMarkup {
+    transform: translate(0%, -32%);
+    size: 250%;
+    background-color: #D8D8D8; }
 
 main {
   background: #424241; }
