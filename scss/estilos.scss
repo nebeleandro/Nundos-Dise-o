@@ -1,6 +1,6 @@
 
 .slogan{
-	padding-top: 100px;
+/*	padding-top: 100px;*/
 	text-align: center;
 	font-weight: bolder;
 	color: black;
@@ -22,7 +22,7 @@ header {
     position: fixed;
     width: 100vw;
     height: 10vh;
-    z-index: 9999;
+    z-index: 99999;
     background-color: #d8d8d8;
     position: fixed;
     display: inline-flex;
@@ -406,7 +406,7 @@ main {
 
     .slogan__servicios{
         @extend .slogan;
-        transform: translate(0%, 250%);
+        transform: translate(0%, 500%);
         font-size: 300%;
        
     }
