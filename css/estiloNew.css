@@ -218,7 +218,9 @@ header {
       height: 600px;
       border: solid 5px #D8D8D8; }
       .contenido .contenido__contacto .contenido__contacto__form textarea {
-        width: 95%; }
+        width: 100%; }
+      .contenido .contenido__contacto .contenido__contacto__form .text_form {
+        width: 100%; }
 
 .mainQuienes {
   background: #424241; }
