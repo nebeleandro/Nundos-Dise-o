@@ -16,25 +16,16 @@ header {
   width: 100vw;
   height: 10vh;
   z-index: 99999;
-  background-color: #d8d8d8;
+  background-color: #D8D8D8;
   position: fixed;
-  display: inline-flex;
-  /*
-
-        .navbar-collapse{
-            transform: translate(0%, -50%);
-        }
-*/
-  /*
-        .navbar__center{
-            text-align: center;
-        }
-*/ }
+  display: inline-flex; }
   header .header__isotipo {
     transform: translate(0%, -25%);
     width: 35vh; }
+  header .navbar-collapse {
+    transform: translate(50%, 1px); }
   header .header__nav {
-    transform: translate(-5%, 40%); }
+    transform: translate(1px, 1px); }
   header a {
     text-decoration: none;
     color: #424241;
@@ -45,19 +36,84 @@ header {
     text-align: center;
     vertical-align: middle;
     animation-duration: 500ms;
-    transform: translate(0%, 30%); }
+    transform: translate(0%, 3px); }
   header a:hover {
     background-color: white;
     color: #D8D8D8; }
-  header__navbar {
-    margin-top: 50%; }
   header .navbar-toggler {
-    transform: translate(-40%, -40%); }
+    position: absolute;
+    right: 20px; }
+  header .navbar__center {
+    text-align: center; }
   header #navbarNavAltMarkup {
-    transform: translate(0%, -32%);
+    transform: translate(0%, 30%);
     size: 250%;
     background-color: #D8D8D8; }
 
+/*
+header {
+
+    align-items: flex-start;
+    justify-content: space-between;
+    
+    position: fixed;
+    width: 100vw;
+    height: 10vh;
+    z-index: 99999;
+    background-color: #d8d8d8;
+    position: fixed;
+    display: inline-flex;
+   
+
+        .header__isotipo {
+            transform: translate(0%, -25%);
+            width: 35vh;
+        }
+
+        .header__nav{
+            transform: translate(-5%, 40%);
+        }
+        a {
+            text-decoration: none;
+            color: #424241;
+            border-radius: 5px;
+            background-color: #D8D8D8;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 15px;
+            text-align: center;
+            vertical-align: middle;
+            animation-duration: 500ms;
+            transform: translate(0%, 30%);
+            }
+
+        a:hover {
+                background-color: white;
+                color: #D8D8D8;
+            }
+
+            &__navbar {
+                margin-top: 50%;
+            }
+        
+
+      /*  .navbar-toggler {
+            transform: translate(-40%, -40%);
+          
+        }*/
+/*
+        .navbar__center{
+            text-align: center;
+        }
+*/
+/*
+       #navbarNavAltMarkup {
+            transform: translate(0%, -32%);
+            size: 250%;
+            background-color: #D8D8D8;
+          
+        }
+    }
+*/
 .contenido {
   background: #424241; }
   .contenido p {
