@@ -1,7 +1,7 @@
 
 .slogan{
 /*	padding-top: 100px;*/
-	text-align: center;
+	
 	font-weight: bolder;
 	color: black;
 	font-size: 200%;
@@ -96,7 +96,17 @@ header {
     
 .slogan__index{
     @extend .slogan;
-    transform: translate(0%, 300%);
+    
+    transform: translate(0%, 600%);
+    background-color: rgba($color: grey, $alpha: .7);
+    background-size: cover;
+    font-size: 250%;
+    width: unset;
+    margin-left: 2%;
+    margin-right: 2%;
+    padding-right: 1%;
+    padding-left: 1%;
+    color: white;
 }
 
 
@@ -334,8 +344,15 @@ header {
 
 .slogan__quienes{
     @extend .slogan;
-    transform: translate(0%, 200%);
+    transform: translate(0%, 500%);
+    background-color: rgba($color: grey, $alpha: .7);
+    font-size: 250%;
+    width: fit-content;
     color: white;
+    margin-left: 2%;
+    margin-right: 2%;
+    padding-right: 1%;
+    padding-left: 1%;
 }
 
 
@@ -397,8 +414,16 @@ header {
 
     .slogan__contacto{
         @extend .slogan;
-        transform: translate(-0%, 250%);
-        font-size: 300%;
+        transform: translate(-0%, 450%);
+        font-size: 250%;
+        background-color: rgba($color: grey, $alpha: .7);
+        
+        width: fit-content;
+        color: white;
+        margin-left: 2%;
+        margin-right: 2%;
+        padding-right: 1%;
+        padding-left: 1%;
     }
 
     #gridContacto{
@@ -511,8 +536,16 @@ header {
 
     .slogan__servicios{
         @extend .slogan;
-        transform: translate(0%, 500%);
-        font-size: 300%;
+        transform: translate(0%, 700%);
+        background-color: rgba($color:black, $alpha: .7);
+        background-size: cover;
+        font-size: 250%;
+        width: fit-content;
+        margin-left: 2%;
+        margin-right: 2%;
+        padding-right: 1%;
+        padding-left: 1%;
+        color: white;
        
     }
    

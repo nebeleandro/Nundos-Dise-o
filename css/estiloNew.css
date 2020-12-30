@@ -1,6 +1,5 @@
 .slogan, .contenido .slogan__index, .mainQuienes .slogan__quienes, .mainContacto .slogan__contacto, .mainServicios .slogan__servicios {
   /*	padding-top: 100px;*/
-  text-align: center;
   font-weight: bolder;
   color: black;
   font-size: 200%;
@@ -64,7 +63,16 @@ header {
     font-style: normal;
     margin-bottom: 0; }
   .contenido .slogan__index {
-    transform: translate(0%, 300%); }
+    transform: translate(0%, 600%);
+    background-color: rgba(128, 128, 128, 0.7);
+    background-size: cover;
+    font-size: 250%;
+    width: unset;
+    margin-left: 2%;
+    margin-right: 2%;
+    padding-right: 1%;
+    padding-left: 1%;
+    color: white; }
   .contenido .Titulo {
     color: #D8D8D8;
     font-weight: bold;
@@ -238,8 +246,15 @@ header {
     background-attachment: contain;
     height: 1000px; }
   .mainQuienes .slogan__quienes {
-    transform: translate(0%, 200%);
-    color: white; }
+    transform: translate(0%, 500%);
+    background-color: rgba(128, 128, 128, 0.7);
+    font-size: 250%;
+    width: fit-content;
+    color: white;
+    margin-left: 2%;
+    margin-right: 2%;
+    padding-right: 1%;
+    padding-left: 1%; }
   .mainQuienes .contenido__info h1.contenido__info__titulo {
     color: #D8D8D8;
     font-weight: bold;
@@ -287,8 +302,15 @@ header {
     background-attachment: contain;
     height: 1000px; }
   .mainContacto .slogan__contacto {
-    transform: translate(0%, 250%);
-    font-size: 300%; }
+    transform: translate(0%, 450%);
+    font-size: 250%;
+    background-color: rgba(128, 128, 128, 0.7);
+    width: fit-content;
+    color: white;
+    margin-left: 2%;
+    margin-right: 2%;
+    padding-right: 1%;
+    padding-left: 1%; }
   .mainContacto #gridContacto #formContact {
     height: 100%;
     width: 80%; }
@@ -358,8 +380,16 @@ header {
     background-attachment: contain;
     height: 1000px; }
   .mainServicios .slogan__servicios {
-    transform: translate(0%, 500%);
-    font-size: 300%; }
+    transform: translate(0%, 700%);
+    background-color: rgba(0, 0, 0, 0.7);
+    background-size: cover;
+    font-size: 250%;
+    width: fit-content;
+    margin-left: 2%;
+    margin-right: 2%;
+    padding-right: 1%;
+    padding-left: 1%;
+    color: white; }
   .mainServicios .card {
     margin-bottom: 5%;
     position: relative;
