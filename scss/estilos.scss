@@ -68,14 +68,17 @@ header {
 
         .navbar-toggler {
             transform: translate(-40%, 15%);
+           
         }
+     
         
-        
-        .collapse {
-            transform: (0%, 0%);
+     
+/*
+        .navbar__center{
+            text-align: center;
         }
-
-        #navbarNavAltMarkup {
+*/
+       #navbarNavAltMarkup {
             transform: translate(0%, -32%);
             size: 250%;
             background-color: #D8D8D8;
@@ -437,6 +440,10 @@ header {
         #map{
             @include sizes(80%, 80%);
         }
+
+        .text_form{
+            width: 100%;
+        }
     }
  
 
@@ -459,7 +466,8 @@ header {
 	}
 #contactoTitulo{
 	grid-area: titulo;
-	color: black;
+    color: black;
+    text-align: center;
 }
 #map{
     grid-area: map;

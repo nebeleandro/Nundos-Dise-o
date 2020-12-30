@@ -24,6 +24,11 @@ header {
         .navbar-collapse{
             transform: translate(0%, -50%);
         }
+*/
+  /*
+        .navbar__center{
+            text-align: center;
+        }
 */ }
   header .header__isotipo {
     transform: translate(0%, -25%);
@@ -48,8 +53,6 @@ header {
     margin-top: 50%; }
   header .navbar-toggler {
     transform: translate(-40%, 15%); }
-  header .collapse {
-    transform: 0%, 0%; }
   header #navbarNavAltMarkup {
     transform: translate(0%, -32%);
     size: 250%;
@@ -319,6 +322,8 @@ header {
   .mainContacto #gridContacto #map {
     height: 80%;
     width: 80%; }
+  .mainContacto #gridContacto .text_form {
+    width: 100%; }
   .mainContacto .contacto h1 {
     padding: 10px; }
   .mainContacto #gridContacto {
@@ -332,7 +337,8 @@ header {
     padding: 2%; }
   .mainContacto #contactoTitulo {
     grid-area: titulo;
-    color: black; }
+    color: black;
+    text-align: center; }
   .mainContacto #map {
     grid-area: map;
     padding: 10px;
