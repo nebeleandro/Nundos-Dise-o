@@ -52,7 +52,7 @@ header {
   header__navbar {
     margin-top: 50%; }
   header .navbar-toggler {
-    transform: translate(-40%, 15%); }
+    transform: translate(-40%, -40%); }
   header #navbarNavAltMarkup {
     transform: translate(0%, -32%);
     size: 250%;
@@ -307,15 +307,20 @@ header {
     background-attachment: contain;
     height: 1000px; }
   .mainContacto .slogan__contacto {
-    transform: translate(0%, 450%);
+    /* transform: translate(-0%, 450%);*/
     font-size: 250%;
     background-color: rgba(128, 128, 128, 0.7);
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    text-align: center;
     width: fit-content;
     color: white;
     margin-left: 2%;
     margin-right: 2%;
     padding-right: 1%;
-    padding-left: 1%; }
+    padding-left: 1%;
+    height: auto; }
   .mainContacto #gridContacto #formContact {
     height: 100%;
     width: 80%; }
@@ -388,10 +393,14 @@ header {
     background-attachment: contain;
     height: 1000px; }
   .mainServicios .slogan__servicios {
-    transform: translate(0%, 700%);
+    /* transform: translate(0%, 700%);*/
     background-color: rgba(128, 128, 128, 0.7);
     background-size: cover;
     font-size: 250%;
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    text-align: center;
     width: fit-content;
     margin-left: 2%;
     margin-right: 2%;
@@ -405,16 +414,29 @@ header {
   .mainServicios .card {
     margin-bottom: 5%;
     padding: 5px;
-    color: grey; }
-  .mainServicios .card-img-top {
-    border-radius: 5%; }
-  .mainServicios .info, .mainServicios .info__producto, .mainServicios .info__espacio, .mainServicios .info__animacion, .mainServicios .info__personaje, .mainServicios .info__presentacion, .mainServicios .info__modelado {
-    position: relative;
-    text-align: center;
-    font-family: 'Roboto Condensed', sans-serif;
-    font-weight: bold;
-    font-size: 30px;
-    color: black; }
+    color: grey;
+    width: .9; }
+    .mainServicios .card .card__contenido {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around; }
+      .mainServicios .card .card__contenido .card-img-top {
+        border-radius: 5%;
+        width: 90%; }
+      .mainServicios .card .card__contenido .card-text {
+        width: 90%;
+        text-align: center; }
+      .mainServicios .card .card__contenido .card-body {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around; }
+    .mainServicios .card .info, .mainServicios .card .info__producto, .mainServicios .card .info__espacio, .mainServicios .card .info__animacion, .mainServicios .card .info__personaje, .mainServicios .card .info__presentacion, .mainServicios .card .info__modelado {
+      position: relative;
+      text-align: center;
+      font-family: 'Roboto Condensed', sans-serif;
+      font-weight: bold;
+      font-size: 30px;
+      color: black; }
   .mainServicios .info__producto {
     /* transform: translate(0px, -270px);
     */ }

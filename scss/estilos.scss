@@ -67,8 +67,8 @@ header {
         
 
         .navbar-toggler {
-            transform: translate(-40%, 15%);
-           
+            transform: translate(-40%, -40%);
+          
         }
      
         
@@ -420,16 +420,22 @@ header {
 
     .slogan__contacto{
         @extend .slogan;
-        transform: translate(-0%, 450%);
+       /* transform: translate(-0%, 450%);*/
         font-size: 250%;
         background-color: rgba($color: grey, $alpha: .7);
+        position: absolute;
         
+        top:50%;
+        width: 100%;
+        text-align: center;
+       
         width: fit-content;
         color: white;
         margin-left: 2%;
         margin-right: 2%;
         padding-right: 1%;
         padding-left: 1%;
+        height: auto;
     }
 
     #gridContacto{
@@ -547,10 +553,15 @@ header {
 
     .slogan__servicios{
         @extend .slogan;
-        transform: translate(0%, 700%);
+       /* transform: translate(0%, 700%);*/
         background-color: rgba($color: grey, $alpha: .7);
         background-size: cover;
         font-size: 250%;
+        position: absolute;
+        
+        top:50%;
+        width: 100%;
+        text-align: center;
         width: fit-content;
         margin-left: 2%;
         margin-right: 2%;
@@ -573,11 +584,30 @@ header {
         
         padding: 5px;
         color: grey;
-    }
+        width: .9;
+        
+    .card__contenido{
+
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
     
     .card-img-top{
         border-radius: 5%;
+        width: 90%;
     }
+
+    .card-text{
+        width: 90%;
+        text-align: center;
+    }
+
+    .card-body{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+}
     
     
 .info{
@@ -589,6 +619,7 @@ header {
     
     color: black;
 }
+    }
 
 .info__producto{
     @extend .info;
