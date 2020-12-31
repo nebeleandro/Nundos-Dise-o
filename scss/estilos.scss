@@ -4,7 +4,7 @@
 	
 	font-weight: bolder;
 	color: black;
-	font-size: 200%;
+	
     font-style: italic;
     z-index: 9999;
 }
@@ -20,7 +20,7 @@ header {
     width: 100vw;
     height: 10vh;
     z-index: 99999;
-    background-color: lightblue;
+    background-color: #D8D8D8;
     
     position: fixed;
     display: inline-flex;
@@ -144,11 +144,19 @@ header {
 .slogan__index{
     @extend .slogan;
     
-    transform: translate(0%, 600%);
+    
     background-color: rgba($color: grey, $alpha: .7);
     background-size: cover;
     font-size: 250%;
-    width: unset;
+    
+    position: absolute;
+        
+    top:50%;
+    width: 100%;
+    text-align: center;
+    width: fit-content;
+    height: fit-content;
+    
     margin-left: 2%;
     margin-right: 2%;
     padding-right: 1%;
@@ -219,6 +227,14 @@ header {
             padding: 5%;
             color: black;
             background-color: #D8D8D8;
+            width: 100%;
+            text-align: center;
+          
+            height: fit-content;
+            margin-left: 2%;
+            margin-right: 2%;
+            padding-right: 1%;
+            padding-left: 1%;
             border-radius: 5%;
             font-weight: bold;
             
@@ -231,7 +247,7 @@ header {
         }
 
 
-        .contenio__servicios__lista {
+        .contenido__servicios__lista {
             color: #D8D8D8;
             text-align: center;
             list-style: none;
@@ -406,11 +422,18 @@ header {
 
 .slogan__quienes{
     @extend .slogan;
-    transform: translate(0%, 500%);
+   
     background-color: rgba($color: grey, $alpha: .7);
     font-size: 250%;
-    width: fit-content;
+    
     color: white;
+    position: absolute;
+        
+    top:50%;
+    width: 100%;
+    text-align: center;
+    width: fit-content;
+    height: fit-content;
     margin-left: 2%;
     margin-right: 2%;
     padding-right: 1%;
@@ -637,26 +660,31 @@ header {
         display: flex;
         flex-direction: row;
         justify-content: space-around;
+       
+        
         
     }
    
     .card {
         margin-bottom: 5%;
+        width: auto;
+       
         
-        
-        padding: 5px;
         color: grey;
-        width: .9;
+      
+       
         
     .card__contenido{
 
         display: flex;
         flex-direction: column;
         justify-content: space-around;
+        padding: 2%;
     
     .card-img-top{
         border-radius: 5%;
         width: 90%;
+        padding: 0%;
     }
 
     .card-text{
@@ -668,6 +696,7 @@ header {
         display: flex;
         flex-direction: row;
         justify-content: space-around;
+        padding: 0%;
     }
 }
     

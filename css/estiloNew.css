@@ -2,7 +2,6 @@
   /*	padding-top: 100px;*/
   font-weight: bolder;
   color: black;
-  font-size: 200%;
   font-style: italic;
   z-index: 9999; }
 
@@ -16,7 +15,7 @@ header {
   width: 100vw;
   height: 10vh;
   z-index: 99999;
-  background-color: lightblue;
+  background-color: #D8D8D8;
   position: fixed;
   display: inline-flex; }
   header .header__isotipo {
@@ -122,11 +121,15 @@ header {
     font-style: normal;
     margin-bottom: 0; }
   .contenido .slogan__index {
-    transform: translate(0%, 600%);
     background-color: rgba(128, 128, 128, 0.7);
     background-size: cover;
     font-size: 250%;
-    width: unset;
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    width: fit-content;
+    height: fit-content;
     margin-left: 2%;
     margin-right: 2%;
     padding-right: 1%;
@@ -184,13 +187,20 @@ header {
       padding: 5%;
       color: black;
       background-color: #D8D8D8;
+      width: 100%;
+      text-align: center;
+      height: fit-content;
+      margin-left: 2%;
+      margin-right: 2%;
+      padding-right: 1%;
+      padding-left: 1%;
       border-radius: 5%;
       font-weight: bold; }
     .contenido .contenido__servicios .alert-dark {
       display: flex;
       align-items: center;
       justify-content: center; }
-    .contenido .contenido__servicios .contenio__servicios__lista {
+    .contenido .contenido__servicios .contenido__servicios__lista {
       color: #D8D8D8;
       text-align: center;
       list-style: none;
@@ -320,11 +330,15 @@ header {
     background-attachment: contain;
     height: 1000px; }
   .mainQuienes .slogan__quienes {
-    transform: translate(0%, 500%);
     background-color: rgba(128, 128, 128, 0.7);
     font-size: 250%;
-    width: fit-content;
     color: white;
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    width: fit-content;
+    height: fit-content;
     margin-left: 2%;
     margin-right: 2%;
     padding-right: 1%;
@@ -486,23 +500,25 @@ header {
     justify-content: space-around; }
   .mainServicios .card {
     margin-bottom: 5%;
-    padding: 5px;
-    color: grey;
-    width: .9; }
+    width: auto;
+    color: grey; }
     .mainServicios .card .card__contenido {
       display: flex;
       flex-direction: column;
-      justify-content: space-around; }
+      justify-content: space-around;
+      padding: 2%; }
       .mainServicios .card .card__contenido .card-img-top {
         border-radius: 5%;
-        width: 90%; }
+        width: 90%;
+        padding: 0%; }
       .mainServicios .card .card__contenido .card-text {
         width: 90%;
         text-align: center; }
       .mainServicios .card .card__contenido .card-body {
         display: flex;
         flex-direction: row;
-        justify-content: space-around; }
+        justify-content: space-around;
+        padding: 0%; }
     .mainServicios .card .info, .mainServicios .card .info__producto, .mainServicios .card .info__espacio, .mainServicios .card .info__animacion, .mainServicios .card .info__personaje, .mainServicios .card .info__presentacion, .mainServicios .card .info__modelado {
       position: relative;
       text-align: center;
