@@ -33,7 +33,7 @@ header {
         transform: translate(50%, 1px);
     }
     .header__nav {
-        transform: translate(1px, 1px);
+        transform: translate(-5%, 1px);
     }
     a {
         text-decoration: none;
@@ -62,7 +62,10 @@ header {
         transform: translate(0%, 30%);
         size: 250%;
         background-color: #D8D8D8;
-    }
+    }/*
+    .navbar-nav{
+        transform: translate(-5%, 0%);
+    }*/
 }/*
 header {
 

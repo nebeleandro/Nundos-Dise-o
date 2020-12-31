@@ -17,14 +17,18 @@ header {
   z-index: 99999;
   background-color: #D8D8D8;
   position: fixed;
-  display: inline-flex; }
+  display: inline-flex;
+  /*
+    .navbar-nav{
+        transform: translate(-5%, 0%);
+    }*/ }
   header .header__isotipo {
     transform: translate(0%, -25%);
     width: 35vh; }
   header .navbar-collapse {
     transform: translate(50%, 1px); }
   header .header__nav {
-    transform: translate(1px, 1px); }
+    transform: translate(-5%, 1px); }
   header a {
     text-decoration: none;
     color: #424241;
