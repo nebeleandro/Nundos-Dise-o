@@ -15,7 +15,7 @@ header {
   width: 100vw;
   height: 10vh;
   z-index: 99999;
-  background-color: #D8D8D8;
+  background-color: #F9F6F2;
   position: fixed;
   display: inline-flex;
   /*
@@ -33,16 +33,17 @@ header {
     text-decoration: none;
     color: #424241;
     border-radius: 5px;
-    background-color: #D8D8D8;
+    background-color: #F9F6F2;
     font-family: 'Montserrat', sans-serif;
     font-size: 15px;
     text-align: center;
     vertical-align: middle;
     animation-duration: 500ms;
+    font-weight: bold;
     transform: translate(0%, 3px); }
   header a:hover {
     background-color: white;
-    color: #D8D8D8; }
+    color: #0153CA; }
   header .navbar-toggler {
     position: absolute;
     right: 20px; }
@@ -51,7 +52,7 @@ header {
   header #navbarNavAltMarkup {
     transform: translate(0%, 30%);
     size: 250%;
-    background-color: #D8D8D8; }
+    background-color: #F9F6F2; }
 
 /*
 header {
@@ -118,7 +119,7 @@ header {
     }
 */
 .contenido {
-  background: #424241; }
+  background: #444444; }
   .contenido p {
     font-family: 'Montserrat', sans-serif;
     font-weight: 200;
@@ -154,7 +155,7 @@ header {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-image: url("../imagenes/portada.jpg");
+    background-image: url("../imagenes/portada5.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -171,13 +172,12 @@ header {
     flex-direction: column;
     align-items: center;
     text-align: center;
-    background-color: #424241;
     background-size: cover;
     width: 30%;
     transform: translate(117%, 0%); }
     .contenido .contenido__servicios .contenido__servicios__titulo {
-      color: #D8D8D8;
-      font-weight: bold;
+      color: #F6C26B;
+      font-weight: bolder;
       font-size: 150%;
       text-align: center;
       text-transform: uppercase;
@@ -188,8 +188,8 @@ header {
     .contenido .contenido__servicios li {
       margin: 10%;
       padding: 2%;
-      color: black;
-      background-color: #D8D8D8;
+      color: #444444;
+      background-color: #F6C26B;
       width: 100%;
       text-align: center;
       height: fit-content;
@@ -214,7 +214,7 @@ header {
       font-style: normal; }
   .contenido .contenido__proyectos {
     padding: 50px;
-    background-color: #424241;
+    background-color: #F9F6F2;
     background-size: cover;
     /*
         .contenido__proyectos__sliderFotos {
@@ -256,6 +256,8 @@ header {
       /* transform: translate(150%, 0%);*/ }
     .contenido .contenido__proyectos .slider__imagenes {
       transform: translate(25%, 0%); }
+      .contenido .contenido__proyectos .slider__imagenes .carousel-control-next-icon {
+        color: #444444; }
   .contenido .contenido__quienes {
     background: white;
     padding: 50px; }
@@ -322,7 +324,7 @@ header {
     font-style: normal;
     padding: 50px; }
   .mainQuienes .contenido__portada {
-    background-image: url('https://d3tvpxjako9ywy.cloudfront.net/blog/content/uploads/2019/01/Create_A_Winning_Design_Team_Workflow_1-896x518.jpg?av=92abfb8e7f78d91c98a0f4ed20d15cc2" width="100%" height="100%');
+    background-image: url("../imagenes/portada1.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -386,7 +388,7 @@ header {
     font-style: normal;
     padding: 50px; }
   .mainContacto .portada {
-    background-image: url("https://compass-ssl.microsoft.com/assets/d9/eb/d9eb0c52-4132-4f9a-ab2f-8442d248124f.png?n=ioc_home_bottomleft_4up_358x201.png");
+    background-image: url("../imagenes/portada2.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -472,12 +474,12 @@ header {
     font-style: normal;
     padding: 50px; }
   .mainServicios .portada {
-    background-image: url("https://www.johnappleman.com/img/estudio-diseno-grafico-madrid/00-estudio-diseno-grafico-promo-01.jpg");
+    background-image: url("../imagenes/portada3.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     background-attachment: contain;
-    height: 1000px; }
+    height: 110vh; }
   .mainServicios .slogan__servicios {
     /* transform: translate(0%, 700%);*/
     background-color: rgba(128, 128, 128, 0.7);
@@ -734,7 +736,15 @@ footer {
   background-size: cover;
   padding: 10px;
   z-index: 9999; }
+  footer .footer__info {
+    margin-left: 3%;
+    margin-top: 1%; }
   footer .derechosAutor {
-    text-align: center; }
+    text-align: center;
+    color: white;
+    font-weight: bolder; }
+    footer .derechosAutor p {
+      color: #D8D8D8; }
   footer p {
-    font-size: 15px; }
+    font-size: 15px;
+    font-family: 'Montserrat', sans-serif; }
