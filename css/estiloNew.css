@@ -181,14 +181,13 @@ header {
       font-size: 150%;
       text-align: center;
       text-transform: uppercase;
-      text-decoration: underline;
       font-family: 'Montserrat', sans-serif;
       font-weight: 500;
       font-style: normal;
-      padding: 10%; }
+      padding: 2%; }
     .contenido .contenido__servicios li {
       margin: 10%;
-      padding: 5%;
+      padding: 2%;
       color: black;
       background-color: #D8D8D8;
       width: 100%;
@@ -245,7 +244,6 @@ header {
       font-size: 150%;
       text-align: center;
       text-transform: uppercase;
-      text-decoration: underline;
       font-family: 'Montserrat', sans-serif;
       font-weight: 500;
       font-style: normal;
@@ -267,7 +265,6 @@ header {
       font-size: 150%;
       text-align: center;
       text-transform: uppercase;
-      text-decoration: underline;
       font-family: 'Montserrat', sans-serif;
       font-weight: 500;
       font-style: normal; }
@@ -286,7 +283,6 @@ header {
       font-size: 150%;
       text-align: center;
       text-transform: uppercase;
-      text-decoration: underline;
       font-family: 'Montserrat', sans-serif;
       font-weight: 500;
       font-style: normal;
@@ -321,7 +317,6 @@ header {
     font-size: 150%;
     text-align: center;
     text-transform: uppercase;
-    text-decoration: underline;
     font-family: 'Montserrat', sans-serif;
     font-weight: 500;
     font-style: normal;
@@ -355,15 +350,15 @@ header {
       font-size: 150%;
       text-align: center;
       text-transform: uppercase;
-      text-decoration: underline;
       font-family: 'Montserrat', sans-serif;
       font-weight: 500;
       font-style: normal;
       padding: 10px; }
     .mainQuienes .contenido__info .info__text {
-      padding: 3%; }
+      padding: 3%;
+      background-color: #D8D8D8; }
       .mainQuienes .contenido__info .info__text .contenido__info__texto {
-        color: #D8D8D8;
+        color: #424241;
         text-align: center; }
 
 .mainContacto {
